@@ -1,0 +1,25 @@
+<header>
+  <div class="wrapper">
+    {% assign custom_url = site.url | append: site.baseurl %}
+    {% assign full_base_url = site.github.url | default: custom_url %}
+    <nav class="navbar navbar-static-top navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="#" class="navbar-left"><img class="w-icon" src="{{ full_base_url }}/images/w.svg"></a>
+          <a class="navbar-brand" href="{{ full_base_url }}/">{{ site.title | escape }}</a>
+        </div>
+        <div id="navbar">
+          <ul class="nav navbar-nav pull-right">
+            {% for my_page in site.pages %}
+              {% if my_page.title %}
+              <li {% if page.url contains my_page.url %} class="active" {% endif %}>
+                <a href="{{ my_page.url | prepend: full_base_url }}">{{ my_page.title | escape }}</a>
+              </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
