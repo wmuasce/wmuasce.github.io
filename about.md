@@ -1,7 +1,8 @@
 ---
 title: About
 layout: default
-permalink: "/about/"
+permalink: /about/
+published: true
 ---
 
 # About Us
@@ -17,3 +18,5 @@ We are the American Society of Civil Engineers (ASCE), Associated General Contra
 The student chapter holds bi-weekly meetings at the WMU Engineering College. We participate Adopt-A-Highway and community outreach programs, host speakers, take field trips, and build the concrete canoe and steel bridge.
 
 We are open to all students and encourage everyone to get involved. See how you can get involved.
+
+Test test test.
